@@ -219,6 +219,22 @@ export default () => (
        </div>
      </section>
 
+     <section id="call-to-action">
+       <div className="row">
+         <div className="two columns header-col">
+           <h1><span>Get Hosting.</span></h1>
+         </div>
+         <div className="seven columns">
+           <h2><Link to="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</Link></h2>
+           <p>Looking for an awesome and reliable webhosting? Try <Link to="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></Link>. Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>.</p>
+         </div>
+
+         <div className="three columns action">
+           <Link to="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" className="button">Sign Up Now</Link>
+         </div>
+       </div>
+     </section>
+
    </main>
   </>
 
