@@ -225,12 +225,12 @@ export default () => (
            <h1><span>Get Hosting.</span></h1>
          </div>
          <div className="seven columns">
-           <h2><Link to="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</Link></h2>
-           <p>Looking for an awesome and reliable webhosting? Try <Link to="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></Link>. Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>.</p>
+           <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</a></h2>
+           <p>Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>. Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>.</p>
          </div>
 
          <div className="three columns action">
-           <Link to="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" className="button">Sign Up Now</Link>
+           <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" className="button">Sign Up Now</a>
          </div>
        </div>
      </section>
@@ -464,7 +464,7 @@ export default () => (
         </div>
       </div>
 
-      <p className="copyright">&copy; 2014 Woo | Design by <Link title="Styleshout" to="http://www.styleshout.com/">Styleshout</Link></p>
+      <p className="copyright">&copy; 2014 Woo | Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></p>
 
       <div id="go-top">
         <Link className="smoothscroll" title="Back to Top" to="#hero"><i className="icon-up-open"></i></Link>
