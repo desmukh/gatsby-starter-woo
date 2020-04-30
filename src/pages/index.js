@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "../styles/default.css"
 import "../styles/layout.css"
@@ -16,9 +17,9 @@ export default () => (
     </Helmet>
     <header>
       <div className="logo">
-         <Link className="smoothscroll" to="#hero">
+         <AnchorLink to="/#hero">
            <img alt="" src="images/logo.png" />
-         </Link>
+         </AnchorLink>
       </div>
 
       <nav id="nav-wrap">
@@ -26,11 +27,11 @@ export default () => (
 	      <Link className="mobile-btn" to="#" title="Hide navigation">Hide Menu</Link>
 
         <ul id="nav" className="nav">
-          <li><Link className="smoothscroll" to="#features">Features</Link></li>
-	        <li><Link className="smoothscroll" to="#pricing">Pricing</Link></li>
-          <li><Link className="smoothscroll" to="#screenshots">Screenshots</Link></li>
-          <li><Link className="smoothscroll" to="#testimonials">Testimonials</Link></li>
-          <li><Link className="smoothscroll" to="#subscribe">Subscribe</Link></li>
+          <li><AnchorLink to="/#features">Features</AnchorLink></li>
+	        <li><AnchorLink to="/#pricing">Pricing</AnchorLink></li>
+          <li><AnchorLink to="/#screenshots">Screenshots</AnchorLink></li>
+          <li><AnchorLink to="/#testimonials">Testimonials</AnchorLink></li>
+          <li><AnchorLink to="/#subscribe">Subscribe</AnchorLink></li>
         </ul>
       </nav>
 
@@ -52,7 +53,7 @@ export default () => (
 
             <div className="buttons">
               <Link className="button trial" to="#">Free Trial</Link>
-              <Link className="button learn-more smoothscroll" to="#features">Learn More</Link>
+              <AnchorLink className="button learn-more" to="/#features">Learn More</AnchorLink>
             </div>
 
             <div className="hero-image">
@@ -467,7 +468,7 @@ export default () => (
       <p className="copyright">&copy; 2014 Woo | Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></p>
 
       <div id="go-top">
-        <Link className="smoothscroll" title="Back to Top" to="#hero"><i className="icon-up-open"></i></Link>
+        <AnchorLink title="Back to Top" to="/#hero"><i className="icon-up-open"></i></AnchorLink>
       </div>
     </div>
   </footer>
