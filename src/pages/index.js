@@ -1,7 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+import Header from "../components/header"
 
 import "../styles/default.css"
 import "../styles/layout.css"
@@ -15,32 +16,8 @@ export default () => (
       <title>Corona Solidarity Campaign</title>
       <link rel="shortcut icon" href="/favicon.png" type="image/png" />
     </Helmet>
-    <header>
-      <div className="logo">
-         <AnchorLink to="/#hero">
-           <img alt="" src="images/logo.png" />
-         </AnchorLink>
-      </div>
+    <Header />
 
-      <nav id="nav-wrap">
-        <Link className="mobile-btn" to="#nav-wrap" title="Show navigation">Show Menu</Link>
-	      <Link className="mobile-btn" to="#" title="Hide navigation">Hide Menu</Link>
-
-        <ul id="nav" className="nav">
-          <li><AnchorLink to="/#features">Features</AnchorLink></li>
-	        <li><AnchorLink to="/#pricing">Pricing</AnchorLink></li>
-          <li><AnchorLink to="/#screenshots">Screenshots</AnchorLink></li>
-          <li><AnchorLink to="/#testimonials">Testimonials</AnchorLink></li>
-          <li><AnchorLink to="/#subscribe">Subscribe</AnchorLink></li>
-        </ul>
-      </nav>
-
-      <ul className="header-social">
-         <li><Link to="#"><i className="fa fa-facebook"></i></Link></li>
-         <li><Link to="#"><i className="fa fa-twitter"></i></Link></li>
-         <li><Link to="#"><i className="fa fa-google-plus"></i></Link></li>
-      </ul>
-    </header>
     <main>
       <section id="hero">
         <div className="row">
