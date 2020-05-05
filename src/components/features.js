@@ -1,4 +1,5 @@
 import React from "react"
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export default () => (
 
@@ -12,10 +13,9 @@ export default () => (
        </p>
      </div>
 
-     <div className="six columns feature-media left">
+     <ScrollAnimation animateIn="pulse" animateOnce="true" initiallyVisible="true"  className="six columns feature-media left">
        <img src="images/feature-image-1.png" alt="" />
-     </div>
-
+     </ScrollAnimation>
    </div>
 
    <div className="row feature responsive">
@@ -27,10 +27,9 @@ export default () => (
        </p>
      </div>
 
-     <div className="six columns feature-media right">
+     <ScrollAnimation animateIn="pulse" animateOnce="true" initiallyVisible="true" className="six columns feature-media right">
        <img src="images/feature-image-2.png" alt="" />
-     </div>
-
+    </ScrollAnimation>
    </div>
 
    <div className="row feature cross-browser">
@@ -42,9 +41,9 @@ export default () => (
        </p>
      </div>
 
-     <div className="six columns feature-media left">
+     <ScrollAnimation animateIn="pulse" animateOnce="true" initiallyVisible="true" className="six columns feature-media left">
        <img src="images/feature-image-3.png" alt="" />
-     </div>
+     </ScrollAnimation>
 
    </div>
 
@@ -57,12 +56,12 @@ export default () => (
        </p>
      </div>
 
-     <div className="six columns feature-media right">
+     <ScrollAnimation animateIn="pulse" animateOnce="true" initiallyVisible="true" className="six columns feature-media right">
        <div className="fluid-video-wrapper">
          <iframe title="video" src="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=F64B39" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
          </iframe>
        </div>
-     </div>
+     </ScrollAnimation>
    </div>
  </section>
 )
