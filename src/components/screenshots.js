@@ -1,117 +1,87 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { Component } from 'react';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
-export default () => (
-  <section id="screenshots">
+const images = [
+  {big:'b-line-icons.jpg', thumb:'line-icons.jpg', caption:'Line Icons' },
+  {big:'b-hipster.jpg', thumb:'hipster.jpg', caption:'Hipster' },
+  {big:'b-authentic-vintage.jpg', thumb:'authentic-vintage.jpg', caption:'Authentic Vintage'},
+  {big:'b-spot-uv-logo.jpg', thumb:'spot-uv-logo.jpg', caption:'Spot UV Logo'},
+  {big:'b-tshirt-mockup.jpg', thumb:'tshirt-mockup.jpg', caption:'TShirt Mockup'},
+  {big:'b-abstract-vector.jpg', thumb:'abstract-vector.jpg', caption:'Abstract Vector'},
+  {big:'b-embossed-paper.jpg', thumb:'embossed-paper.jpg', caption:'Embossed Paper'},
+  {big:'b-judah.jpg', thumb:'judah.jpg', caption:'Judah'}
+];
 
-    <div className="row section-head">
-      <h1>Product Screenshots.</h1>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-   </p>
- </div>
+export default class LightboxExample extends Component {
+  constructor(props) {
+    super(props);
 
- <div className="row">
-   <div className="twelve columns">
-     <div id="screenshots-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+    this.state = {
+      photoIndex: 0,
+      isOpen: false,
+    };
+  }
 
-       <div className="columns item">
-         <div className="item-wrap">
+  render() {
+    const { photoIndex, isOpen } = this.state;
 
-           <Link to="images/screenshots/big/b-line-icons.jpg" data-imagelightbox="a" >
-             <img src="images/screenshots/line-icons.jpg" alt="Line Icons" />
-               <div className="overlay"></div>
-                 <div className="link-icon"><i className="icon-plus"></i></div>
-               </Link>
-             </div>
-           </div>
+    return (
+      <section id="screenshots">
 
-           <div className="columns item">
-             <div className="item-wrap">
-
-               <Link to="images/screenshots/big/b-hipster.jpg" data-imagelightbox="a" >
-                 <img src="images/screenshots/hipster.jpg" alt="Hipster" />
-                 <div className="overlay"></div>
-                 <div className="link-icon"><i className="icon-plus"></i></div>
-               </Link>
-             </div>
-           </div>
-
-           <div className="columns item">
-             <div className="item-wrap">
-
-               <Link to="images/screenshots/big/b-authentic-vintage.jpg" data-imagelightbox="a" >
-                 <img src="images/screenshots/authentic-vintage.jpg" alt="Authentic Vintage" />
-                 <div className="overlay"></div>
-                 <div className="link-icon"><i className="icon-plus"></i></div>
-               </Link>
-
-             </div>
-           </div>
-
-           <div className="columns item">
-             <div className="item-wrap">
-
-               <Link to="images/screenshots/big/b-spot-uv-logo.jpg" data-imagelightbox="a" >
-                 <img src="images/screenshots/spot-uv-logo.jpg" alt="Spot UV Logo" />
-                 <div className="overlay"></div>
-                 <div className="link-icon"><i className="icon-plus"></i></div>
-               </Link>
-
-             </div>
-           </div>
-
-           <div className="columns item">
-             <div className="item-wrap">
-
-               <Link to="images/screenshots/big/b-tshirt-mockup.jpg" data-imagelightbox="a" >
-                 <img src="images/screenshots/tshirt-mockup.jpg" alt="TShirt Mockup" />
-                 <div className="overlay"></div>
-                 <div className="link-icon"><i className="icon-plus"></i></div>
-               </Link>
-
-             </div>
-           </div>
-
-           <div className="columns item">
-             <div className="item-wrap">
-
-               <Link to="images/screenshots/big/b-abstract-vector.jpg" data-imagelightbox="a" >
-                 <img src="images/screenshots/abstract-vector.jpg" alt="Abstract Vector" />
-                 <div className="overlay"></div>
-                 <div className="link-icon"><i className="icon-plus"></i></div>
-               </Link>
-
-             </div>
-           </div>
-
-           <div className="columns item">
-             <div className="item-wrap">
-
-               <Link to="images/screenshots/big/b-embossed-paper.jpg" data-imagelightbox="a" >
-                 <img src="images/screenshots/embossed-paper.jpg" alt="Embossed Paper" />
-                 <div className="overlay"></div>
-                 <div className="link-icon"><i className="icon-plus"></i></div>
-               </Link>
-
-             </div>
-           </div>
-
-           <div className="columns item">
-             <div className="item-wrap">
-
-               <Link to="images/screenshots/big/b-judah.jpg" data-imagelightbox="a" >
-                 <img src="images/screenshots/judah.jpg" alt="Judah" />
-                 <div className="overlay"></div>
-                 <div className="link-icon"><i className="icon-plus"></i></div>
-               </Link>
-
-             </div>
-           </div>
-
-         </div>
-
-       </div>
+        <div className="row section-head">
+          <h1>Product Screenshots.</h1>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+       </p>
      </div>
-   </section>
+     <div className="row">
+       <div className="twelve columns">
+         <div id="screenshots-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
 
-)
+           {images.map((value, index) => {
+             return (
+               <div className="columns item">
+                 <div className="item-wrap">
+
+                   <a href={'images/screenshots/big/' + images[index].big} data-imagelightbox="a" onClick={event => {
+                        event.preventDefault()
+                        this.setState({ isOpen: true, photoIndex: index, })
+                    }}>
+                     <img src={'images/screenshots/' + images[index].thumb} alt={images[index].caption} />
+                       <div className="overlay"></div>
+                         <div className="link-icon"><i className="icon-plus"></i></div>
+                         </a>
+                     </div>
+                   </div>
+             )
+           })}
+
+             </div>
+           </div>
+         </div>
+      <div>
+
+        {isOpen && (
+          <Lightbox
+            mainSrc={'images/screenshots/big/' + images[photoIndex].big}
+            nextSrc={'images/screenshots/big/' + images[(photoIndex + 1) % images.length].big}
+            prevSrc={'images/screenshots/big/' + images[(photoIndex + images.length - 1) % images.length].big}
+            onCloseRequest={() => this.setState({ isOpen: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images.length - 1) % images.length,
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % images.length,
+              })
+            }
+            imageCaption={images[photoIndex].caption}
+            enableZoom={false}
+          />
+        )}
+      </div></section>
+    );
+  }
+}
