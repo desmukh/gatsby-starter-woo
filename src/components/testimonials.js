@@ -1,6 +1,5 @@
 import React from "react"
 import Slider from "react-slick"
-import { css } from "@emotion/core"
 
 const MySlider = () =>{
   const settings = {
