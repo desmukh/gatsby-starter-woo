@@ -12,12 +12,12 @@ export default () => (
         </div>
 
         <div className="buttons">
-          <AnchorLink className="button trial" to="#">Free Trial</AnchorLink>
+          <AnchorLink className="button trial animated shake" to="#">Free Trial</AnchorLink>
           <AnchorLink className="button learn-more" to="/#features">Learn More</AnchorLink>
         </div>
 
         <div className="hero-image">
-          <img src="images/hero-image.png" alt="" />
+          <img src="images/hero-image.png" alt="" class="animated fadeInUpBig" />
         </div>
       </div>
     </div>
