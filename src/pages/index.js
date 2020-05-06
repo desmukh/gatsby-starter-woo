@@ -40,6 +40,7 @@ export default () => (
     </main>
 
     <Footer />
+    <script src="../js/main.js"></script>
 
   </>
 
