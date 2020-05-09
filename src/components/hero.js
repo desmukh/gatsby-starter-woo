@@ -17,7 +17,7 @@ export default () => (
         </div>
 
         <div className="hero-image">
-          <img src="images/hero-image.png" alt="" class="animated fadeInUpBig" />
+          <img src="images/hero-image.png" alt="" className="animated fadeInUpBig" />
         </div>
       </div>
     </div>
