@@ -40,7 +40,7 @@ export default class LightboxExample extends Component {
 
            {images.map((value, index) => {
              return (
-               <div className="columns item">
+               <div className="columns item" key={index.toString()}>
                  <div className="item-wrap">
 
                    <a href={'images/screenshots/big/' + images[index].big} data-imagelightbox="a" onClick={event => {
