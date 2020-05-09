@@ -12,7 +12,7 @@ export default () => (
         </div>
 
         <div className="buttons">
-          <AnchorLink className="button trial animated shake" to="#">Free Trial</AnchorLink>
+          <AnchorLink className="button trial animated shake" to="/#">Free Trial</AnchorLink>
           <AnchorLink className="button learn-more" to="/#features">Learn More</AnchorLink>
         </div>
 

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 export default () => (
@@ -8,9 +7,9 @@ export default () => (
       <div className="six columns info">
 
         <div className="footer-logo">
-          <Link to="#">
+          <AnchorLink to="/#">
             <img src="images/footer-logo.png" alt="" />
-          </Link>
+          </AnchorLink>
         </div>
 
         <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
@@ -30,18 +29,18 @@ export default () => (
        <div className="columns">
          <h3 className="social">socialize</h3>
          <ul>
-           <li><Link to="#">Facebook</Link></li>
-           <li><Link to="#">Twitter</Link></li>
-           <li><Link to="#">GooglePlus</Link></li>
+           <li><a href="https://facebook.com/">Facebook</a></li>
+           <li><a href="https://twitter.com/">Twitter</a></li>
+           <li><a href="https://google.com/">GooglePlus</a></li>
          </ul>
       </div>
 
         <div className="columns last">
            <h3 className="contact">Contact Us</h3>
            <ul>
-             <li><Link to="tel:6473438234">647.343.8234</Link></li>
-             <li><Link to="tel:1234567890">123.456.7890</Link></li>
-             <li><Link to="mailto:someone@woo.com">someone@woosite.com</Link></li>
+             <li><a href="tel:6473438234">647.343.8234</a></li>
+             <li><a href="tel:1234567890">123.456.7890</a></li>
+             <li><a href="mailto:someone@woo.com">someone@woosite.com</a></li>
            </ul>
         </div>
       </div>

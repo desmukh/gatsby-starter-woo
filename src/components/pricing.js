@@ -26,7 +26,7 @@ export default () => (
             </ul>
 
             <footer className="plan-sign-up">
-              <Link className="button" to="#">Sign Up</Link>
+              <Link className="button" to="/#">Sign Up</Link>
             </footer>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default () => (
             </ul>
 
             <footer className="plan-sign-up">
-              <Link className="button" to="#">Sign Up</Link>
+              <Link className="button" to="/#">Sign Up</Link>
             </footer>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default () => (
             </ul>
 
             <footer className="plan-sign-up">
-              <Link className="button" to="#">Sign Up</Link>
+              <Link className="button" to="/#">Sign Up</Link>
             </footer>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default () => (
             </ul>
 
             <footer className="plan-sign-up">
-              <Link className="button" to="#">Sign Up</Link>
+              <Link className="button" to="/#">Sign Up</Link>
             </footer>
 
           </div>
