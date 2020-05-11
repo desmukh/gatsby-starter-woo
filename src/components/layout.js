@@ -32,7 +32,6 @@ export default function Layout ({ children }){
   </main>
 
   <Footer />
-  <script src="../js/main.js"></script>
   </>
   )
 }
