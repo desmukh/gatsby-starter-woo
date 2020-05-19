@@ -6,5 +6,5 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [ `gatsby-plugin-anchor-links` ],
+  plugins: [ `gatsby-plugin-anchor-links`, `gatsby-plugin-smoothscroll` ],
 }

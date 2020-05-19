@@ -1,16 +1,16 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 
 export default function () {
   const [isVisible, setVisibility] = useState(false)
 
   const menuItems = [
-    {path: '/#features', label: 'Features'},
-    {path: '/#pricing', label: 'Pricing'},
-    {path: '/#screenshots', label: 'Screenshots'},
-    {path: '/#testimonials', label: 'Testimonials'},
-    {path: '/#subscribe', label: 'Subscribe'},
+    {path: '#features', label: 'Features'},
+    {path: '#pricing', label: 'Pricing'},
+    {path: '#screenshots', label: 'Screenshots'},
+    {path: '#testimonials', label: 'Testimonials'},
+    {path: '#subscribe', label: 'Subscribe'},
   ]
 
   let showStyle = null
@@ -28,7 +28,9 @@ export default function () {
 
         {menuItems.map((value, index) => {
           return (
-              <li><Link to={menuItems[index].path}>{menuItems[index].label}</Link></li>
+              <li><button onClick={() => scrollTo(menuItems[index].path)}>
+                {menuItems[index].label}
+              </button></li>
           )
         })}
 

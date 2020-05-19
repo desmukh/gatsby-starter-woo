@@ -178,7 +178,7 @@
       border-bottom-style: dotted;
    }
 
-   ul#nav li a {
+   ul#nav li button {
       display: block;
       width: auto;
       margin: 0;
