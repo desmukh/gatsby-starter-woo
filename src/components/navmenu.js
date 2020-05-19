@@ -5,6 +5,14 @@ import { Link } from "gatsby"
 export default function () {
   const [isVisible, setVisibility] = useState(false)
 
+  const menuItems = [
+    {path: '/#features', label: 'Features'},
+    {path: '/#pricing', label: 'Pricing'},
+    {path: '/#screenshots', label: 'Screenshots'},
+    {path: '/#testimonials', label: 'Testimonials'},
+    {path: '/#subscribe', label: 'Subscribe'},
+  ]
+
   let showStyle = null
   if (isVisible){
     showStyle = {display: 'block'}
@@ -17,11 +25,13 @@ export default function () {
       <button id="toggle-btn" href="/#" title="Menu" onClick={() => setVisibility(!isVisible)}>Menu</button>
 
       <ul id="nav" className="nav mobile" style={showStyle}>
-        <li><Link to="/#features" >Features</Link></li>
-        <li><Link to="/#pricing">Pricing</Link></li>
-        <li><Link to="/#screenshots">Screenshots</Link></li>
-        <li><Link to="/#testimonials">Testimonials</Link></li>
-        <li><Link to="/#subscribe">Subscribe</Link></li>
+
+        {menuItems.map((value, index) => {
+          return (
+              <li><Link to={menuItems[index].path}>{menuItems[index].label}</Link></li>
+          )
+        })}
+
       </ul>
     </nav>
   )
