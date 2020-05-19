@@ -120,7 +120,7 @@ header .header-social li a:hover { color: #11ABB0; }
 }
 
 /* hide toggle button */
-#nav-wrap > a { display: none;  }
+#nav-wrap > button { display: none; }
 
 ul#nav {
    min-height: 54px;
