@@ -28,7 +28,12 @@ export default function () {
 
         {menuItems.map((value, index) => {
           return (
-              <li><button onClick={() => scrollTo(menuItems[index].path)}>
+            <li><button onClick={() =>
+                {
+                  scrollTo(menuItems[index].path)
+                  setVisibility(0)
+                }
+              }>
                 {menuItems[index].label}
               </button></li>
           )
