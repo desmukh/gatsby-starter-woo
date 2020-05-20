@@ -15,7 +15,7 @@ export default function () {
 
   let showStyle = null
   if (isVisible){
-    showStyle = {display: 'block'}
+    showStyle = {transform: 'scaleY(1)'}
   }else{
     showStyle = null
   }
@@ -28,7 +28,7 @@ export default function () {
 
         {menuItems.map((value, index) => {
           return (
-            <li><button onClick={() =>
+            <li key={index}><button onClick={() =>
                 {
                   scrollTo(menuItems[index].path)
                   setVisibility(0)

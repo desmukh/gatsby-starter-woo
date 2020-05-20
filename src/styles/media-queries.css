@@ -149,13 +149,18 @@
       padding: 24px 36px 48px 36px;
       background: #1D2025;
       height: auto;
-      display: none;
+      display: block;
       clear: both;
       width: auto;
 
       position: relative;
       top: 0;
       right: 30px;
+
+      overflow: hidden;
+      transition:transform 0.2s ease-out;
+      transform:scaleY(0);
+      transform-origin:top;
    }
 
    /* display toggle buttons */
