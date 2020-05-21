@@ -157,9 +157,9 @@ ul#nav li button {
   font-size: 11px;
   font-family: 'montserrat-regular', sans-serif;
 }
-ul#nav li a:hover { color: #fff; }
-ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #fff; }
+ul#nav li button:hover { color: #fff; }
+ul#nav li button:active { background-color: transparent !important; }
+ul#nav li.current button { color: #fff; }
 
 
 /* ------------------------------------------------------------------ */
