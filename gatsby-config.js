@@ -18,6 +18,7 @@ module.exports = {
       google: `styleshout`,
     },
     favicon: `favicon.png`,
+    logo: `images/logo.png`
   },
   plugins: [ `gatsby-plugin-anchor-links`, `gatsby-plugin-smoothscroll`, `react-scrollspy` ],
 }

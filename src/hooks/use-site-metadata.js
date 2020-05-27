@@ -11,6 +11,7 @@ export const useSiteMetadata = () => {
               name
             }
             favicon
+            logo
             social{
               twitter
               facebook
