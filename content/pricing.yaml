@@ -1,0 +1,63 @@
+title: Pricing Tables.
+body: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+plans:
+  -
+    title: Starter
+    fa: fa fa-cog
+    price: FREE
+    per: per month
+    features:
+      - 1GB Storage
+      - 5GB Bandwidth
+      - 2 Domains
+      - 3 Databases
+      - 1 FTP Account
+      - 25 Email Accounts
+    signup:
+      label: Sign Up
+      to: '#'
+  -
+    title: Standard
+    fa: fa fa-thumbs-up
+    price: $9.99
+    per: per month
+    features:
+      - 3GB Storage
+      - 10GB Bandwidth
+      - 3 Domains
+      - 5 Databases
+      - 3 FTP Account
+      - 30 Email Accounts
+    signup:
+      label: Sign Up
+      to: '#'
+  -
+    title: Premium
+    fa: fa fa-star
+    price: $19.99
+    per: per month
+    features:
+      - 10GB Storage
+      - 25GB Bandwidth
+      - 5 Domains
+      - 10 Databases
+      - 10 FTP Account
+      - 50 Email Accounts
+    signup:
+      label: Sign Up
+      to: '#'
+  -
+    title: Ultimate
+    fa: fa fa-trophy
+    price: $29.99
+    per: per month
+    features:
+      - 30GB Storage
+      - Unlimited Bandwidth
+      - 10 Domains
+      - 15 Databases
+      - 10 FTP Account
+      - 50 Email Accounts
+    signup:
+      label: Sign Up
+      to: '#'
