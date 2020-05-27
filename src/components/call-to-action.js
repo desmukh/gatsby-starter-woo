@@ -1,4 +1,5 @@
 import React from "react"
+import content from "../../content/call-to-action.yaml"
 
 export default () => (
   <section id="call-to-action">
@@ -7,12 +8,14 @@ export default () => (
         <h1><span>Get Hosting.</span></h1>
       </div>
       <div className="seven columns">
-        <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</a></h2>
-        <p>Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>. Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>.</p>
+        <h2><a href={ content.title.url }>{ content.title.text }</a></h2>
+        <p
+          dangerouslySetInnerHTML={{ __html: content.body }}
+        />
       </div>
 
       <div className="three columns action">
-        <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" className="button">Sign Up Now</a>
+        <a href={ content.button.url } className="button">{content.button.label}</a>
       </div>
     </div>
   </section>
