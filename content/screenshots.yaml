@@ -1,0 +1,35 @@
+title: Product Screenshots.
+body: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+screenshots:
+  -
+    big: 'b-line-icons.jpg'
+    thumb: 'line-icons.jpg'
+    caption: 'Line Icons'
+  -
+    big: 'b-hipster.jpg'
+    thumb: 'hipster.jpg'
+    caption: 'Hipster'
+  -
+    big: 'b-authentic-vintage.jpg'
+    thumb: 'authentic-vintage.jpg'
+    caption: 'Authentic Vintage'
+  -
+    big: 'b-spot-uv-logo.jpg'
+    thumb: 'spot-uv-logo.jpg'
+    caption: 'Spot UV Logo'
+  -
+    big: 'b-tshirt-mockup.jpg'
+    thumb: 'tshirt-mockup.jpg'
+    caption: 'TShirt Mockup'
+  -
+    big: 'b-abstract-vector.jpg'
+    thumb: 'abstract-vector.jpg'
+    caption: 'Abstract Vector'
+  -
+    big: 'b-embossed-paper.jpg'
+    thumb: 'embossed-paper.jpg'
+    caption: 'Embossed Paper'
+  -
+    big: 'b-judah.jpg'
+    thumb: 'judah.jpg'
+    caption: 'Judah'
