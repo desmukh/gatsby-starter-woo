@@ -14,6 +14,7 @@ export const useSiteMetadata = () => {
             social{
               twitter
               facebook
+              google
             }
           }
         }

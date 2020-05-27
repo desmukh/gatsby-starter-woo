@@ -14,7 +14,8 @@ module.exports = {
     description: `Woo is a clean, modern, landing page site template.`,
     social: {
       twitter: `styleshout`,
-      facebook: `styleshout`
+      facebook: `styleshout`,
+      google: `styleshout`,
     },
     favicon: `favicon.png`,
   },
