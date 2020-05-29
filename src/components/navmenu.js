@@ -2,17 +2,14 @@ import React, { useState } from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import Scrollspy from "react-scrollspy"
 
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+
 
 export default function () {
   const [isVisible, setVisibility] = useState(false)
 
-  const menuItems = [
-    {path: 'features', label: 'Features'},
-    {path: 'pricing', label: 'Pricing'},
-    {path: 'screenshots', label: 'Screenshots'},
-    {path: 'testimonials', label: 'Testimonials'},
-    {path: 'subscribe', label: 'Subscribe'},
-  ]
+  const { menuItems } = useSiteMetadata()
+
 
   let showStyle = null
   if (isVisible){

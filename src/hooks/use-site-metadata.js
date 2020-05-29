@@ -12,6 +12,10 @@ export const useSiteMetadata = () => {
             }
             favicon
             logo
+            menuItems{
+              path
+              label
+            }
             social{
               service
               url
