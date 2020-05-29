@@ -13,9 +13,9 @@ export const useSiteMetadata = () => {
             favicon
             logo
             social{
-              twitter
-              facebook
-              google
+              service
+              url
+              fa
             }
             footer{
               text

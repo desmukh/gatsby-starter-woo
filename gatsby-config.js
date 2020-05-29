@@ -12,11 +12,17 @@ module.exports = {
       name: `Joe Bloggs`,
     },
     description: `Woo is a clean, modern, landing page site template.`,
-    social: {
-      twitter: `styleshout`,
-      facebook: `styleshout`,
-      google: `styleshout`,
-    },
+    social: [
+      { service: `twitter`,
+        url : `https://twitter.com/styleshout`,
+        fa: `fa-twitter` },
+      { service: `facebook`,
+        url : `https://facebook.com/styleshout`,
+        fa: `fa-facebook` },
+      { service: `google`,
+        url : `https://google.com/styleshout`,
+        fa: `fa-google-plus` },
+    ],
     favicon: `favicon.png`,
     logo: `images/logo.png`,
     footer: {
