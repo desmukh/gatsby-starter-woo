@@ -33,9 +33,11 @@ export default () => {
          <div className="columns">
            <h3 className="social">socialize</h3>
            <ul>
-             <li><a href={ 'https://facebook.com/ ' + social.facebook }>Facebook</a></li>
-             <li><a href={'https://twitter.com/ ' + social.twitter }>Twitter</a></li>
-             <li><a href={'https://google.com/ ' + social.google }>GooglePlus</a></li>
+             { social.map(mySocial =>
+               <li><a href={ mySocial.url }>
+                 { mySocial.service }
+               </a></li>
+             )}
            </ul>
         </div>
 
