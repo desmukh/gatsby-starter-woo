@@ -10,6 +10,7 @@ export const useSiteMetadata = () => {
             author{
               name
             }
+            sections
             favicon
             logo
             menuItems{

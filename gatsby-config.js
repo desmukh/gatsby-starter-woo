@@ -12,6 +12,15 @@ module.exports = {
       name: `Joe Bloggs`,
     },
     description: `Woo is a clean, modern, landing page site template.`,
+    sections: [
+      `hero`,
+      `features`,
+      `pricing`,
+      `call-to-action`,
+      `screenshots`,
+      `testimonials`,
+      `subscribe`
+    ],
     menuItems: [
       {path: 'features', label: 'Features'},
       {path: 'pricing', label: 'Pricing'},

@@ -10,16 +10,28 @@ import Screenshots from "../components/screenshots"
 import Testimonials from "../components/testimonials"
 import Subscribe from "../components/subscribe"
 
-export default () => (
-  <>
-    <Layout>
-      <Hero />
-      <Features />
-      <Pricing />
-      <CalltoAction />
-      <Screenshots />
-      <Testimonials />
-      <Subscribe />
-    </Layout>
-  </>
-)
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+
+export default () => {
+  const { sections } = useSiteMetadata()
+  const availableSections = {
+    "hero": Hero,
+    "features": Features,
+    "pricing": Pricing,
+    "call-to-action": CalltoAction,
+    "screenshots": Screenshots,
+    "testimonials": Testimonials,
+    "subscribe": Subscribe
+  }
+
+  return(
+    <>
+      <Layout>
+        { sections.map(section => {
+          let Tagname = availableSections[section]
+          return <Tagname />
+        }) }
+      </Layout>
+    </>
+  )
+}
