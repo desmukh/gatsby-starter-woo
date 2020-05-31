@@ -4,6 +4,9 @@ import 'react-image-lightbox/style.css'; // This only needs to be imported once 
 
 import content from '../../content/screenshots.yaml'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+
 const screenshots = content.screenshots
 
 export default class LightboxExample extends Component {
@@ -46,7 +49,7 @@ export default class LightboxExample extends Component {
                        alt={screenshot.caption} />
                        <div className="overlay"></div>
                          <div className="link-icon">
-                           <i className="icon-plus"></i>
+                           <FontAwesomeIcon icon={faPlus} />
                          </div>
                          </a>
                      </div>
