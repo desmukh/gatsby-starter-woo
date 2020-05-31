@@ -289,7 +289,9 @@
    footer { text-align: center; }
    footer .info { padding-right: 30px; }
    footer .info p { margin-bottom: 18px; }
-   footer h3:before { text-align: center; }
+   footer .columns svg {
+     margin: auto;
+   }
    footer .right-cols {
       width: 90% !important;
       margin: 0 auto ;

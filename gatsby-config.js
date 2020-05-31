@@ -35,7 +35,7 @@ module.exports = {
       { service: `Twitter`,
         url : `https://twitter.com/styleshout`,
         fa: `twitter` },
-      { service: `Google Plus`,
+      { service: `GitHub`,
         url : `https://github.com/desmukh/`,
         fa: `github` },
     ],

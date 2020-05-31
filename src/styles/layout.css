@@ -772,7 +772,7 @@ footer h3 {
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-footer h3:before {
+footer .columns svg {
    font-family: 'FontAwesome';
 	margin: 0 0 6px 3px;
 	font-size: 30px;
@@ -781,9 +781,6 @@ footer h3:before {
    color: #738291;
    display: block;
 }
-footer h3.address:before { content: "\f041"; }
-footer h3.social:before { content: "\f0c0"; }
-footer h3.contact:before { content: "\f0e0"; }
 
 footer ul {
    margin: 0;
