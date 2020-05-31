@@ -13,7 +13,7 @@
    /* Hero Section
    ------------------------------------------------------------------ */
    .hero-text { width: 82%; }
-   .hero-text h1 { font: 38px/1.2em 'montserrat-regular', sans-serif; }
+   .hero-text h1 { font: 38px/1.2em 'Montserrat', sans-serif; }
 
 	/* Testimonials Section
    ------------------------------------------------------------------- */
@@ -21,7 +21,7 @@
 
    /* Call To Action Section
    ------------------------------------------------------------------- */
-   #call-to-action h2 { font: 26px/36px 'montserrat-bold', sans-serif; }
+   #call-to-action h2 { font: bold 26px/36px 'Montserrat', sans-serif; }
    #call-to-action p { font-size: 16px; }
 
 }
@@ -31,7 +31,7 @@
 @media only screen and (max-width: 900px) {
 
 	/* General and Common Styles */
-	.section-head h1 { font: 18px/30px 'montserrat-bold', sans-serif; }
+	.section-head h1 { font: bold 18px/30px 'Montserrat', sans-serif; }
 
    /* Header Styles
    ------------------------------------------------------------------ */
@@ -42,11 +42,11 @@
    ------------------------------------------------------------------ */
    #hero { padding-top: 60px; }
    .hero-text { width: 88%; }
-   .hero-text h1 { font: 35px/1.2em 'montserrat-regular', sans-serif; }
-   .hero-text p { font: 15px/30px 'opensans-regular', sans-serif; }
+   .hero-text h1 { font: 35px/1.2em 'Montserrat', sans-serif; }
+   .hero-text p { font: 15px/30px 'Open Sans', sans-serif; }
 
    /* nav-wrap */
-   #nav-wrap { font: 10px 'montserrat-regular', sans-serif; }
+   #nav-wrap { font: 10px 'Montserrat', sans-serif; }
 
    /* Features Section
    ------------------------------------------------------------------- */
@@ -68,8 +68,8 @@
       font-size: 66px;
       line-height: 66px;
    }
-   #call-to-action h2 { font: 25px/36px 'montserrat-bold', sans-serif; }
-   #call-to-action .action .button { font: 14px/24px 'montserrat-bold', sans-serif; }
+   #call-to-action h2 { font: bold 25px/36px 'Montserrat', sans-serif; }
+   #call-to-action .action .button { font: bold 14px/24px 'Montserrat', sans-serif; }
    #call-to-action p { font-size: 15px; }
 
    /* Testimonials Section
@@ -102,7 +102,7 @@
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
-      font: 11px 'montserrat-regular', sans-serif;
+      font: 11px 'Montserrat', sans-serif;
       background: transparent !important;
       letter-spacing: 1.5px;
       color: #515968;
@@ -205,8 +205,8 @@
    -------------------------------------------------------------------- */
    #hero { padding-top: 48px; }
    .hero-text { width: 92%; }
-   .hero-text h1 { font: 31px/1.2em 'montserrat-regular', sans-serif; }
-   .hero-text p { font: 14px/24px 'opensans-regular', sans-serif; }
+   .hero-text h1 { font: 31px/1.2em 'Montserrat', sans-serif; }
+   .hero-text p { font: 14px/24px 'Open Sans', sans-serif; }
 
    /* Hero CTA Buttons */
    #hero .buttons { margin-bottom: 30px; }
@@ -214,7 +214,7 @@
       display: block;
       width: 70%;
       margin: 0 auto 18px auto;
-      font: 13px/24px 'montserrat-bold', sans-serif;
+      font: bold 13px/24px 'Montserrat', sans-serif;
       letter-spacing: 1.5px;
    }
 
@@ -244,7 +244,7 @@
    ----------------------------------------------------------------- */
    #call-to-action { text-align: center; }
    #call-to-action h1 {
-      font: 16px/24px 'montserrat-bold', sans-serif;;
+      font: bold 16px/24px 'Montserrat', sans-serif;;
       text-align: center;
       margin-bottom: 30px;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
@@ -335,8 +335,8 @@
    -------------------------------------------------------------------- */
    #hero { padding-top: 42px; }
    .hero-text { width: 96%; }
-   .hero-text h1 { font: 25px/1.2em 'montserrat-regular', sans-serif; }
-   .hero-text p { font: 13px/24px 'opensans-regular', sans-serif; }
+   .hero-text h1 { font: 600 25px/1.2em 'Montserrat', sans-serif; }
+   .hero-text p { font: 13px/24px 'Open Sans', sans-serif; }
 
    /* Testimonials Section
    ------------------------------------------------------------------- */
