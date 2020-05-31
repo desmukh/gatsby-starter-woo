@@ -3,7 +3,7 @@ body: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 plans:
   -
     title: Starter
-    fa: fa fa-cog
+    fa: cog
     price: FREE
     per: per month
     features:
@@ -18,7 +18,7 @@ plans:
       to: '#'
   -
     title: Standard
-    fa: fa fa-thumbs-up
+    fa: thumbs-up
     price: $9.99
     per: per month
     features:
@@ -33,7 +33,7 @@ plans:
       to: '#'
   -
     title: Premium
-    fa: fa fa-star
+    fa: star
     price: $19.99
     per: per month
     features:
@@ -48,7 +48,7 @@ plans:
       to: '#'
   -
     title: Ultimate
-    fa: fa fa-trophy
+    fa: trophy
     price: $29.99
     per: per month
     features:
