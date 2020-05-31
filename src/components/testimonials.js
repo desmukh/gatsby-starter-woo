@@ -37,7 +37,7 @@ const MySlider = () =>{
           <div className="twelve columns">
             <h1>{ content.title }</h1>
           </div>
-          <div class="twelve columns flex-container">
+          <div className="twelve columns flex-container">
           <Slider {...settings} style={{ userSelect: 'text' }}>
             { content.quotes.map((quote, index) => (
               <div>
