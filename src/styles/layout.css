@@ -814,7 +814,7 @@ footer .copyright {
    text-align: center;
    z-index: 889;
 }
-#go-top a {
+#go-top button {
 	text-decoration: none;
 	border: 0 none;
 	display: block;
@@ -829,11 +829,9 @@ footer .copyright {
    transition: all 0.2s ease-in-out;
 
    color: #fff;
-   font-size: 21px;
-   line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background: #0F9095; }
+#go-top button:hover { background: #0F9095; }
 
 
 /* ------------------------------------------------------------------ */

@@ -1,6 +1,8 @@
 import React from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
+import scrollTo from "gatsby-plugin-smoothscroll"
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp, faMapMarkerAlt, faUsers, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -61,7 +63,9 @@ export default () => {
       <p className="copyright">&copy; 2014 Woo | Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a> | Ported to Gatsby by <a href="https://github.com/desmukh" title="Fahad Desmukh">Fahad Desmukh</a> </p>
 
       <div id="go-top">
-        <AnchorLink title="Back to Top" to="/#hero"><FontAwesomeIcon icon={ faChevronUp } /></AnchorLink>
+        <button title="Back to Top" onClick={() => scrollTo('#hero')}>
+          <FontAwesomeIcon icon={ faChevronUp } />
+        </button>
       </div>
     </div>
   </footer>
