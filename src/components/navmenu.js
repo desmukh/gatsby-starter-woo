@@ -41,14 +41,16 @@ export default function () {
 
         {menuItems.map((value, index) => {
           return (
-            <li key={index}><button onClick={() =>
+            <li key={index}>
+              <button onClick={() =>
                 {
-                  scrollTo('#' + menuItems[index].path)
+                  scrollTo('#' + value.path)
                   setVisibility(0)
                 }
               }>
-                {menuItems[index].label}
-              </button></li>
+                {value.label}
+              </button>
+            </li>
           )
         })}
 
