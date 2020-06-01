@@ -6,13 +6,14 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Header from "./header"
 import Footer from "./footer"
 
-import GoogleFontLoader from 'react-google-font-loader'
-
 import "../styles/default.css"
 import "../styles/layout.css"
 import "../styles/media-queries.css"
 import "../styles/animate.css"
 import "../styles/prettyPhoto.css"
+
+import 'typeface-open-sans';
+import 'typeface-montserrat';
 
 export default function Layout ({ children }){
 
@@ -29,19 +30,6 @@ export default function Layout ({ children }){
 
       <link rel="shortcut icon" href={'/' + favicon } type="image/png" />
     </Helmet>
-
-    <GoogleFontLoader
-      fonts={[
-        {
-          font: 'Open Sans',
-          weights: [300, 400, '400i',600, 700]
-        },
-        {
-          font: 'Montserrat',
-          weights: [400, 600, 700]
-        }
-      ]}
-    />
 
     <Header />
 
