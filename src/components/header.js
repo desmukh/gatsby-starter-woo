@@ -8,7 +8,7 @@ import HeaderSocial from "./header-social"
 export default () => (
     <header>
       <div className="logo">
-         <AnchorLink to="/#hero">
+         <AnchorLink to="/#top">
            <img alt="" src={ useSiteMetadata().logo } />
          </AnchorLink>
       </div>

@@ -15,7 +15,7 @@ export default () => {
         <div className="six columns info">
 
           <div className="footer-logo">
-            <AnchorLink to="/#">
+            <AnchorLink to="/">
               <img src={ footer.logo } alt="" />
             </AnchorLink>
           </div>
@@ -63,7 +63,7 @@ export default () => {
       <p className="copyright">&copy; 2014 Woo | Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a> | Ported to Gatsby by <a href="https://github.com/desmukh" title="Fahad Desmukh">Fahad Desmukh</a> </p>
 
       <div id="go-top">
-        <button title="Back to Top" onClick={() => scrollTo('#hero')}>
+        <button title="Back to Top" onClick={() => scrollTo('#top')}>
           <FontAwesomeIcon icon={ faChevronUp } />
         </button>
       </div>

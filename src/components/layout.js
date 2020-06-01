@@ -37,7 +37,7 @@ export default function Layout ({ children }){
 
     <Header />
 
-  <main>
+  <main id="top">
     {children}
   </main>
 
