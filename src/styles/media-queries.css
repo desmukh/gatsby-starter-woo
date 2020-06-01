@@ -115,14 +115,12 @@
       text-align: left;
 		border: none;
       color: #fff;
-      font-size: 12px;
+      font-size: 25px;
       height: 54px;
       line-height: 54px;
       float: right;
 
-      font: 0/0 a;
       text-shadow: none;
-      color: transparent;
 
       position: relative;
       top: 0px;
@@ -132,17 +130,6 @@
       margin-bottom: 0;
       display: block;
    }
-	#nav-wrap > button:before {
-	   font-family: 'FontAwesome';
-      content: "\f0c9";
-      color: #fff;
-      margin: 0;
-      font-size: 25px;
-      line-height: 54px;
-      text-align: left;
-      display: block;
-      float: right;
-	}
 
    /* hide menu panel */
    #nav-wrap ul#nav {

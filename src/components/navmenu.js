@@ -4,6 +4,8 @@ import Scrollspy from "react-scrollspy"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function () {
   const [isVisible, setVisibility] = useState(false)
@@ -20,7 +22,14 @@ export default function () {
 
   return(
     <nav id="nav-wrap">
-      <button id="toggle-btn" href="/#" title="Menu" onClick={() => setVisibility(!isVisible)}>Menu</button>
+      <button
+        id="toggle-btn"
+        href="/#"
+        title="Menu"
+        onClick={() => setVisibility(!isVisible)}
+        >
+        <FontAwesomeIcon icon={ faBars } />
+      </button>
 
       <Scrollspy
         id="nav"
