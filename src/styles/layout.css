@@ -122,14 +122,14 @@ header .header-social li a:hover { color: #11ABB0; }
 /* hide toggle button */
 #nav-wrap > button { display: none; }
 
-ul#nav {
+ul.nav {
    min-height: 54px;
    width: auto;
 
    /* left align the menu */
    text-align: left;
 }
-ul#nav li {
+ul.nav li {
    position: relative;
    list-style: none;
    height: 54px;
@@ -138,7 +138,7 @@ ul#nav li {
 }
 
 /* Links */
-ul#nav li button {
+ul.nav li button {
 
    /* 8px padding top + 8px padding bottom + 38px line-height = 54px */
    display: inline-block;
@@ -157,9 +157,9 @@ ul#nav li button {
   font-size: 11px;
   font-family: 'Montserrat', sans-serif;
 }
-ul#nav li button:hover { color: #fff; }
-ul#nav li button:active { background-color: transparent !important; }
-ul#nav li.current button { color: #fff; }
+ul.nav li button:hover { color: #fff; }
+ul.nav li button:active { background-color: transparent !important; }
+ul.nav li.current button { color: #fff; }
 
 
 /* ------------------------------------------------------------------ */

@@ -32,7 +32,6 @@ export default function () {
       </button>
 
       <Scrollspy
-        id="nav"
         className="nav mobile"
         style={showStyle}
         items={ menuItems.map(a => a.path) }
