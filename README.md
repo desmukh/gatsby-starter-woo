@@ -2,7 +2,7 @@
 
 Simple, clean and responsive landing page for your product or service. This is a [GatsbyJS](https://www.gatsbyjs.org/) port of  StyleShout's [Woo](https://www.styleshout.com/free-templates/woo/) template.
 
-[**DEMO**](https://gatsby-starter-woo.surge.sh/)
+[**DEMO**](https://gatsby-starter-woo.netlify.app/)
 
 ![Screenshot](screenshot.jpg)
 
@@ -117,7 +117,7 @@ The content for the landing page can be found in the `content/` folder, in which
 ### Additional pages
 To add more pages, just add a new `.js` file in the `src/pages/` directory and Gatsby will automatically create a new page with the same name as the file.
 
-These files are written in [JSX](https://www.gatsbyjs.org/docs/glossary/jsx/). A sample/style guide can be found [here](https://gatsby-starter-woo.surge.sh/demo/) [(source)](https://github.com/desmukh/gatsby-starter-woo/blob/master/src/pages/demo.js).
+These files are written in [JSX](https://www.gatsbyjs.org/docs/glossary/jsx/). A sample/style guide can be found [here](https://gatsby-starter-woo.netlify.app/demo/) [(source)](https://github.com/desmukh/gatsby-starter-woo/blob/master/src/pages/demo.js).
 
 ### Images
 Currently images are stored in the `static/` folder.
