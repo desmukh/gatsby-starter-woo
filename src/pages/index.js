@@ -12,26 +12,28 @@ import Subscribe from "../components/subscribe"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-export default () => {
+const IndexPage = () => {
   const { sections } = useSiteMetadata()
   const availableSections = {
-    "hero": Hero,
-    "features": Features,
-    "pricing": Pricing,
+    hero: Hero,
+    features: Features,
+    pricing: Pricing,
     "call-to-action": CalltoAction,
-    "screenshots": Screenshots,
-    "testimonials": Testimonials,
-    "subscribe": Subscribe
+    screenshots: Screenshots,
+    testimonials: Testimonials,
+    subscribe: Subscribe,
   }
 
-  return(
+  return (
     <>
       <Layout>
-        { sections.map(section => {
+        {sections.map(section => {
           let Tagname = availableSections[section]
           return <Tagname />
-        }) }
+        })}
       </Layout>
     </>
   )
 }
+
+export default IndexPage

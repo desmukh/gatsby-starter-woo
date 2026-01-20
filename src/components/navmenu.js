@@ -4,56 +4,56 @@ import Scrollspy from "react-scrollspy"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
 
-export default function () {
+const NavMenu = () => {
   const [isVisible, setVisibility] = useState(false)
 
   const { menuItems } = useSiteMetadata()
 
-
   let showStyle = null
-  if (isVisible){
-    showStyle = {transform: 'scaleY(1)'}
-  }else{
+  if (isVisible) {
+    showStyle = { transform: "scaleY(1)" }
+  } else {
     showStyle = null
   }
 
-  return(
+  return (
     <nav id="nav-wrap">
       <button
         id="toggle-btn"
         href="/#"
         title="Menu"
         onClick={() => setVisibility(!isVisible)}
-        >
-        <FontAwesomeIcon icon={ faBars } />
+      >
+        <FontAwesomeIcon icon={faBars} />
       </button>
 
       <Scrollspy
         className="nav mobile"
         style={showStyle}
-        items={ menuItems.map(a => a.path) }
+        items={menuItems.map(a => a.path)}
         currentClassName="current"
-        offset={-100} >
-
+        offset={-100}
+      >
         {menuItems.map((value, index) => {
           return (
             <li key={index}>
-              <button onClick={() =>
-                {
-                  scrollTo('#' + value.path)
+              <button
+                onClick={() => {
+                  scrollTo("#" + value.path)
                   setVisibility(0)
-                }
-              }>
+                }}
+              >
                 {value.label}
               </button>
             </li>
           )
         })}
-
       </Scrollspy>
     </nav>
   )
 }
+
+export default NavMenu
