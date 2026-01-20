@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
+import Seo from "../components/seo"
 
 const DemoPage = () => (
   <>
@@ -548,3 +549,7 @@ const DemoPage = () => (
 )
 
 export default DemoPage
+
+export const Head = () => (
+  <Seo title="Demo" description="Style guide and demo page" />
+)

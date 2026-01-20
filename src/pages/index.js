@@ -9,6 +9,7 @@ import CalltoAction from "../components/call-to-action"
 import Screenshots from "../components/screenshots"
 import Testimonials from "../components/testimonials"
 import Subscribe from "../components/subscribe"
+import Seo from "../components/seo"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
@@ -37,3 +38,5 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const Head = () => <Seo />
