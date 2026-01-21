@@ -1,30 +1,53 @@
 import React from "react"
-import content from "../../content/call-to-action.yaml"
+import { graphql, useStaticQuery } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUpload } from "@fortawesome/free-solid-svg-icons"
 
-const CallToAction = () => (
-  <section id="call-to-action">
-    <div className="row">
-      <div className="two columns header-col">
-        <h1>
-          <FontAwesomeIcon icon={faUpload} />
-          <span>Get Hosting.</span>
-        </h1>
-      </div>
-      <div className="seven columns">
-        <h2>
-          <a href={content.title.url}>{content.title.text}</a>
-        </h2>
-        <p dangerouslySetInnerHTML={{ __html: content.body }} />
-      </div>
+const CallToAction = () => {
+  const data = useStaticQuery(graphql`
+    query CallToActionQuery {
+      markdownRemark(frontmatter: { section: { eq: "call-to-action" } }) {
+        html
+        frontmatter {
+          ctaTitle {
+            text
+            url
+          }
+          button {
+            label
+            url
+          }
+        }
+      }
+    }
+  `)
 
-      <div className="three columns action">
-        <a href={content.button.url} className="button">
-          {content.button.label}
-        </a>
+  const { frontmatter, html } = data.markdownRemark
+
+  return (
+    <section id="call-to-action">
+      <div className="row">
+        <div className="two columns header-col">
+          <h1>
+            <FontAwesomeIcon icon={faUpload} />
+            <span>Get Hosting.</span>
+          </h1>
+        </div>
+        <div className="seven columns">
+          <h2>
+            <a href={frontmatter.ctaTitle.url}>{frontmatter.ctaTitle.text}</a>
+          </h2>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
+
+        <div className="three columns action">
+          <a href={frontmatter.button.url} className="button">
+            {frontmatter.button.label}
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
+
 export default CallToAction

@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-import content from "../../content/pricing.yaml"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core"
@@ -9,17 +8,41 @@ import { fas } from "@fortawesome/free-solid-svg-icons"
 const Pricing = () => {
   library.add(fas)
 
+  const data = useStaticQuery(graphql`
+    query PricingQuery {
+      markdownRemark(frontmatter: { section: { eq: "pricing" } }) {
+        html
+        frontmatter {
+          heading
+          plans {
+            title
+            fa
+            price
+            per
+            features
+            signup {
+              label
+              to
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const { frontmatter, html } = data.markdownRemark
+
   return (
     <section id="pricing">
       <div className="row section-head">
-        <h1>{content.title}</h1>
-        <p>{content.body}</p>
+        <h1>{frontmatter.heading}</h1>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
 
       <div className="row">
         <div className="pricing-tables bgrid-quarters s-bgrid-halves">
-          {content.plans.map((plan, index) => (
-            <div className="column">
+          {frontmatter.plans.map((plan, index) => (
+            <div className="column" key={index}>
               <div className="price-block">
                 <h3 className="plan-title">
                   <i className="fa">
@@ -33,8 +56,8 @@ const Pricing = () => {
                 </p>
 
                 <ul className="features">
-                  {plan.features.map((value, index) => (
-                    <li>{value}</li>
+                  {plan.features.map((value, idx) => (
+                    <li key={idx}>{value}</li>
                   ))}
                 </ul>
                 <footer className="plan-sign-up">

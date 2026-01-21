@@ -1,33 +1,67 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import content from "../../content/hero.yaml"
 
-const Hero = () => (
-  <section id="hero">
-    <div className="row">
-      <div className="twelve columns">
-        <div className="hero-text">
-          <h1 className="responsive-headline">{content.headline}</h1>
-          <p>{content.body}</p>
-        </div>
+const Hero = () => {
+  const data = useStaticQuery(graphql`
+    query HeroQuery {
+      markdownRemark(frontmatter: { section: { eq: "hero" } }) {
+        html
+        frontmatter {
+          headline
+          image {
+            publicURL
+          }
+          button1 {
+            label
+            to
+          }
+          button2 {
+            label
+            to
+          }
+        }
+      }
+    }
+  `)
 
-        <div className="buttons">
-          <AnchorLink
-            className="button trial animated shake"
-            to={content.button1.to}
-          >
-            {content.button1.label}
-          </AnchorLink>
-          <AnchorLink className="button learn-more" to={content.button2.to}>
-            {content.button2.label}
-          </AnchorLink>
-        </div>
+  const { frontmatter, html } = data.markdownRemark
 
-        <div className="hero-image">
-          <img src={content.image} alt="" className="animated fadeInUpBig" />
+  return (
+    <section id="hero">
+      <div className="row">
+        <div className="twelve columns">
+          <div className="hero-text">
+            <h1 className="responsive-headline">{frontmatter.headline}</h1>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+          </div>
+
+          <div className="buttons">
+            <AnchorLink
+              className="button trial animated shake"
+              to={frontmatter.button1.to}
+            >
+              {frontmatter.button1.label}
+            </AnchorLink>
+            <AnchorLink
+              className="button learn-more"
+              to={frontmatter.button2.to}
+            >
+              {frontmatter.button2.label}
+            </AnchorLink>
+          </div>
+
+          <div className="hero-image">
+            <img
+              src={frontmatter.image.publicURL}
+              alt=""
+              className="animated fadeInUpBig"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
+
 export default Hero

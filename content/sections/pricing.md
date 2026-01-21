@@ -1,8 +1,8 @@
-title: Pricing Tables.
-body: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+---
+section: pricing
+heading: Pricing Tables.
 plans:
-  -
-    title: Starter
+  - title: Starter
     fa: cog
     price: FREE
     per: per month
@@ -15,9 +15,8 @@ plans:
       - 25 Email Accounts
     signup:
       label: Sign Up
-      to: '#'
-  -
-    title: Standard
+      to: "#"
+  - title: Standard
     fa: thumbs-up
     price: $9.99
     per: per month
@@ -30,9 +29,8 @@ plans:
       - 30 Email Accounts
     signup:
       label: Sign Up
-      to: '#'
-  -
-    title: Premium
+      to: "#"
+  - title: Premium
     fa: star
     price: $19.99
     per: per month
@@ -45,9 +43,8 @@ plans:
       - 50 Email Accounts
     signup:
       label: Sign Up
-      to: '#'
-  -
-    title: Ultimate
+      to: "#"
+  - title: Ultimate
     fa: trophy
     price: $29.99
     per: per month
@@ -60,4 +57,7 @@ plans:
       - 50 Email Accounts
     signup:
       label: Sign Up
-      to: '#'
+      to: "#"
+---
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.

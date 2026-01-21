@@ -1,0 +1,7 @@
+---
+section: subscribe
+heading: MailChimp signup form.
+small: We never share your information or use it to spam you.
+---
+
+Adding your own MailChimp powered email sign-up is easy. Grab the super slim code from your MailChimp account and drop the code here. Lastly, remove the link and style tags that comes with the embedded code and your good to go. All styling is within our stylesheet.
