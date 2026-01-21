@@ -9,9 +9,6 @@ import "../styles/media-queries.css"
 import "../styles/animate.css"
 import "../styles/prettyPhoto.css"
 
-import "typeface-open-sans"
-import "typeface-montserrat"
-
 import { config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 config.autoAddCss = false

@@ -33,7 +33,7 @@ body { background: #181d21; }
    text-align: center;
 }
 .section-head h1 {
-   font: bold 20px/36px 'Montserrat', sans-serif;
+   font: bold 20px/36px 'Montserrat Variable', sans-serif;
    color: #333;
    text-transform: uppercase;
    letter-spacing: 1.5px;
@@ -113,7 +113,7 @@ header .header-social li a:hover { color: #11ABB0; }
 
 /* nav-wrap */
 #nav-wrap {
-   font: 11px 'Montserrat', sans-serif;
+   font: 11px 'Montserrat Variable', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1.5px;
    float: left;
@@ -155,7 +155,7 @@ ul.nav li button {
 	transition: color .2s ease-in-out;
   background-color: transparent;
   font-size: 11px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Variable', sans-serif;
 }
 ul.nav li button:hover { color: #fff; }
 ul.nav li button:active { background-color: transparent !important; }
@@ -194,7 +194,7 @@ ul.nav li.current button { color: #fff; }
    margin: 54px auto 24px auto;
 }
 .hero-text h1 {
-   font: 600 40px/1.2em 'Montserrat', sans-serif;
+   font: 600 40px/1.2em 'Montserrat Variable', sans-serif;
    color: #fff;
    padding: 0;
    margin: 0;
@@ -203,7 +203,7 @@ ul.nav li.current button { color: #fff; }
 .hero-text h1 span,
 .hero-text a { color: #11ABB0; }
 .hero-text p {
-   font: 16px/30px 'Open Sans', sans-serif;
+   font: 16px/30px 'Open Sans Variable', sans-serif;
    padding: 0;
    margin: 12px 8% 0;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
@@ -225,7 +225,7 @@ ul.nav li.current button { color: #fff; }
    margin: 0 0 18px 0;
 }
 #hero .buttons .button {
-   font: bold 14px/24px 'Montserrat', sans-serif;
+   font: bold 14px/24px 'Montserrat Variable', sans-serif;
    text-transform : uppercase;
    letter-spacing: 2px;
 }
@@ -267,7 +267,7 @@ ul.nav li.current button { color: #fff; }
    float: left;
 }
 #features h3 {
-   font: bold 16px/24px 'Montserrat', sans-serif;
+   font: bold 16px/24px 'Montserrat Variable', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    color: #222;
@@ -294,7 +294,7 @@ ul.nav li.current button { color: #fff; }
    margin-bottom: 36px;
 }
 .plan-title {
-  	font: 600 15px/30px 'Montserrat', sans-serif;
+  	font: 600 15px/30px 'Montserrat Variable', sans-serif;
   	padding: 30px 20px 6px 20px;
    margin-bottom: 0px;
   	text-align: center;
@@ -307,7 +307,7 @@ ul.nav li.current button { color: #fff; }
    font-size: 26px;
 }
 .plan-price {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat Variable', sans-serif;
    font-size: 30px;
    font-weight: bold;
    color: #333;
@@ -317,7 +317,7 @@ ul.nav li.current button { color: #fff; }
    letter-spacing: .5px;
 }
 .plan-price span {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans Variable', sans-serif;
 	font-size: 15px;
   font-weight: 300;
 	color: #999;
@@ -342,7 +342,7 @@ ul.features li:nth-child(even) { }
    text-align: center;
 }
 .plan-sign-up .button {
-   font: bold 13px/24px 'Montserrat', sans-serif;
+   font: bold 13px/24px 'Montserrat Variable', sans-serif;
    text-transform: uppercase;
    letter-spacing: 2px;
 }
@@ -470,7 +470,7 @@ ul.features li:nth-child(even) { }
    padding-bottom: 48px;
 }
 #call-to-action h1 {
-   font: bold 18px/24px 'Montserrat', sans-serif;
+   font: bold 18px/24px 'Montserrat Variable', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
@@ -488,7 +488,7 @@ ul.features li:nth-child(even) { }
 #call-to-action .action { margin-top: 18px; }
 #call-to-action .action .button { text-align: center; }
 #call-to-action h2 {
-   font: bold 28px/36px 'Montserrat', sans-serif;
+   font: bold 28px/36px 'Montserrat Variable', sans-serif;
    color: #EBEEEE;
    margin-bottom: 12px;
 }
@@ -501,7 +501,7 @@ ul.features li:nth-child(even) { }
    padding-right: 5px;
 }
 #call-to-action p span {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans Variable', sans-serif;
   font-weight: 600;
 	color: #A9B5C0;
 }
@@ -550,7 +550,7 @@ ul.features li:nth-child(even) { }
    margin: 0 auto;
 }
 #testimonials h1 {
-   font: bold 16px/24px 'Montserrat', sans-serif;
+   font: bold 16px/24px 'Montserrat Variable', sans-serif;
    color: #6AECF0;
    text-transform: uppercase;
    letter-spacing: 2px;
@@ -565,7 +565,7 @@ ul.features li:nth-child(even) { }
 }
 #testimonials blockquote:before { content: none; }
 #testimonials blockquote p {
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Open Sans Variable', sans-serif;
    font-style: normal;
    font-weight: 600;
    color: #fff;
@@ -726,7 +726,7 @@ ul.features li:nth-child(even) { }
    padding: 18px 20px;
    font-size: 18px;
    line-height: 24px;
-   font-family: 'Montserrat',sans-serif;
+   font-family: 'Montserrat Variable',sans-serif;
    width: 47%;
    text-align: center;
 }
@@ -769,7 +769,7 @@ footer .right-cols .columns {
 footer .right-cols .columns p { margin-bottom: 6px; }
 
 footer h3 {
-   font: 600 13px/24px 'Open Sans', sans-serif;
+   font: 600 13px/24px 'Open Sans Variable', sans-serif;
    margin-bottom: 0;
    color: #fff;
    text-transform: uppercase;
