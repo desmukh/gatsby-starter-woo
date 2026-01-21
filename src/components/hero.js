@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Hero = () => {
@@ -10,7 +11,9 @@ const Hero = () => {
         frontmatter {
           headline
           image {
-            publicURL
+            childImageSharp {
+              gatsbyImageData(formats: [AUTO, WEBP, AVIF])
+            }
           }
           button1 {
             label
@@ -26,6 +29,7 @@ const Hero = () => {
   `)
 
   const { frontmatter, html } = data.markdownRemark
+  const heroImage = getImage(frontmatter.image)
 
   return (
     <section id="hero">
@@ -52,9 +56,10 @@ const Hero = () => {
           </div>
 
           <div className="hero-image">
-            <img
-              src={frontmatter.image.publicURL}
-              alt=""
+            <GatsbyImage
+              image={heroImage}
+              alt="Hero"
+              loading="eager"
               className="animated fadeInUpBig"
             />
           </div>
