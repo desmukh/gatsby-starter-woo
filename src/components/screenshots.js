@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
 
@@ -17,8 +18,14 @@ const Screenshots = () => {
         frontmatter {
           heading
           screenshots {
-            thumb
-            big
+            thumb {
+              childImageSharp {
+                gatsbyImageData(formats: [AUTO, WEBP, AVIF])
+              }
+            }
+            big {
+              publicURL
+            }
             caption
           }
         }
@@ -42,11 +49,12 @@ const Screenshots = () => {
             className="bgrid-quarters s-bgrid-thirds cf"
           >
             {screenshots.map((screenshot, index) => {
+              const thumbImage = getImage(screenshot.thumb)
               return (
                 <div className="columns item" key={index.toString()}>
                   <div className="item-wrap">
                     <a
-                      href={"/images/screenshots/big/" + screenshot.big}
+                      href={screenshot.big.publicURL}
                       data-imagelightbox="a"
                       onClick={event => {
                         event.preventDefault()
@@ -54,8 +62,8 @@ const Screenshots = () => {
                         setPhotoIndex(index)
                       }}
                     >
-                      <img
-                        src={"/images/screenshots/" + screenshot.thumb}
+                      <GatsbyImage
+                        image={thumbImage}
                         alt={screenshot.caption}
                       />
                       <div className="overlay"></div>
@@ -76,7 +84,7 @@ const Screenshots = () => {
             open={isOpen}
             close={() => setIsOpen(false)}
             slides={screenshots.map(screenshot => ({
-              src: "/images/screenshots/big/" + screenshot.big,
+              src: screenshot.big.publicURL,
               title: screenshot.caption,
             }))}
             index={photoIndex}

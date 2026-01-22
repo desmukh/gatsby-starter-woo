@@ -2,29 +2,29 @@
 section: screenshots
 heading: Product Screenshots.
 screenshots:
-  - big: b-line-icons.jpg
-    thumb: line-icons.jpg
+  - thumb: ../images/screenshots/line-icons.jpg
+    big: ../images/screenshots/big/b-line-icons.jpg
     caption: Line Icons
-  - big: b-hipster.jpg
-    thumb: hipster.jpg
+  - thumb: ../images/screenshots/hipster.jpg
+    big: ../images/screenshots/big/b-hipster.jpg
     caption: Hipster
-  - big: b-authentic-vintage.jpg
-    thumb: authentic-vintage.jpg
+  - thumb: ../images/screenshots/authentic-vintage.jpg
+    big: ../images/screenshots/big/b-authentic-vintage.jpg
     caption: Authentic Vintage
-  - big: b-spot-uv-logo.jpg
-    thumb: spot-uv-logo.jpg
+  - thumb: ../images/screenshots/spot-uv-logo.jpg
+    big: ../images/screenshots/big/b-spot-uv-logo.jpg
     caption: Spot UV Logo
-  - big: b-tshirt-mockup.jpg
-    thumb: tshirt-mockup.jpg
+  - thumb: ../images/screenshots/tshirt-mockup.jpg
+    big: ../images/screenshots/big/b-tshirt-mockup.jpg
     caption: TShirt Mockup
-  - big: b-abstract-vector.jpg
-    thumb: abstract-vector.jpg
+  - thumb: ../images/screenshots/abstract-vector.jpg
+    big: ../images/screenshots/big/b-abstract-vector.jpg
     caption: Abstract Vector
-  - big: b-embossed-paper.jpg
-    thumb: embossed-paper.jpg
+  - thumb: ../images/screenshots/embossed-paper.jpg
+    big: ../images/screenshots/big/b-embossed-paper.jpg
     caption: Embossed Paper
-  - big: b-judah.jpg
-    thumb: judah.jpg
+  - thumb: ../images/screenshots/judah.jpg
+    big: ../images/screenshots/big/b-judah.jpg
     caption: Judah
 ---
 
