@@ -77,7 +77,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-anchor-links`,
     `gatsby-plugin-smoothscroll`,
-    `react-scrollspy`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
