@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import ScrollAnimation from "react-animate-on-scroll"
 
 const Features = () => {
@@ -11,7 +12,14 @@ const Features = () => {
             name
             title
             body
-            image
+            image {
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                )
+              }
+            }
             vimeo
           }
         }
@@ -35,7 +43,8 @@ const Features = () => {
 
         let media
         if (value.image) {
-          media = <img src={value.image} alt="" />
+          const featureImage = getImage(value.image)
+          media = <GatsbyImage image={featureImage} alt={value.title} />
         } else if (value.vimeo) {
           media = (
             <div className="fluid-video-wrapper">
