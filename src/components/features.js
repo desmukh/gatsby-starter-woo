@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import ScrollAnimation from "react-animate-on-scroll"
+import ScrollAnimation from "./scroll-animation"
 
 const Features = () => {
   const data = useStaticQuery(graphql`

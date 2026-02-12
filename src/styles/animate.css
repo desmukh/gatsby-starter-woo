@@ -2932,3 +2932,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .slick-list {
   transition: height 0.5s;
 }
+
+.scroll-animation-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
