@@ -16,28 +16,28 @@
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.2.8",
     "@fontsource-variable/open-sans": "^5.2.7",
-    "@fortawesome/fontawesome-svg-core": "^7.1.0",
-    "@fortawesome/free-brands-svg-icons": "^7.1.0",
-    "@fortawesome/free-solid-svg-icons": "^7.1.0",
-    "@fortawesome/react-fontawesome": "^3.1.1",
-    "gatsby": "^5.15.0",
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^3.2.0",
+    "gatsby": "^5.16.1",
     "gatsby-plugin-anchor-links": "^1.2.1",
-    "gatsby-plugin-image": "^3.15.0",
-    "gatsby-plugin-sharp": "^5.15.0",
+    "gatsby-plugin-image": "^3.16.0",
+    "gatsby-plugin-sharp": "^5.16.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
-    "gatsby-source-filesystem": "^5.15.0",
-    "gatsby-transformer-remark": "^6.15.0",
-    "gatsby-transformer-sharp": "^5.15.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-remark": "^6.16.0",
+    "gatsby-transformer-sharp": "^5.16.0",
     "react": "^18.3.1",
     "react-animate-on-scroll": "^2.1.9",
     "react-dom": "^18.3.1",
     "react-scrollspy": "^3.4.3",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
-    "yet-another-react-lightbox": "^3.21.8"
+    "yet-another-react-lightbox": "^3.29.0"
   },
   "devDependencies": {
-    "prettier": "^3.4.2"
+    "prettier": "^3.8.1"
   },
   "repository": {
     "type": "git",
